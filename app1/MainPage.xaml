@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app1.MainPage">
+
+    <StackLayout VerticalOptions="CenterAndExpand" Padding="5">  
+      <StackLayout Orientation="Horizontal">  
+          <Entry x:Name="fname" Placeholder="First Name"
+                 Completed="fname_Completed" TextChanged="fname_TextChanged"></Entry>  
+          <Entry x:Name="lname" Placeholder="Last Name"
+                 Completed="lname_Completed" TextChanged="lname_TextChanged"></Entry>  
+      </StackLayout>  
+      <Entry x:Name="email" Placeholder="Email"
+             Completed="email_Completed" TextChanged="email_TextChanged"></Entry>  
+      <Entry x:Name="password" Placeholder="Password" IsPassword="True"
+             Completed="password_Completed" TextChanged="password_TextChanged"></Entry>  
+      <Entry x:Name="password2" Placeholder="Confirm Password" IsPassword="True"
+             Completed="password2_Completed" TextChanged="password2_TextChanged"></Entry>  
+      <Label Text="Date Of Birth"></Label>  
+      <DatePicker></DatePicker>  
+      <Label Text="Address"></Label>  
+      <Editor></Editor>  
+      <StackLayout Orientation="Horizontal">  
+          <Label Text="Save Password"></Label>  
+          <Switch IsToggled="False"></Switch>  
+      </StackLayout>  
+      <Button Text="Sign Up" ></Button>  
+      <Label Text="Already have account? Sign In" TextColor="Blue"></Label>  
+    </StackLayout>  
+
+</ContentPage>
